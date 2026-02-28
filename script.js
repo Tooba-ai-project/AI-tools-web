@@ -82,3 +82,56 @@ fetch('tools.json')
     displayTools();
     displayRecent();
   });
+<script>
+const searchInput = document.getElementById('searchInput');
+const toolsContainer = document.getElementById('toolsContainer');
+const historyList = document.getElementById('historyList');
+
+// Initialize search history from localStorage
+let searchHistory = JSON.parse(localStorage.getItem('searchHistory')) || [];
+renderHistory();
+
+// Filter tools on input
+searchInput.addEventListener('input', () => {
+  const query = searchInput.value.toLowerCase();
+
+  // Filter tool cards
+  const toolCards = toolsContainer.getElementsByClassName('tool-card');
+  Array.from(toolCards).forEach(card => {
+    const title = card.querySelector('h3').innerText.toLowerCase();
+    if (title.includes(query)) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+});
+
+// Add search to history on Enter key
+searchInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    const query = searchInput.value.trim();
+    if (query && !searchHistory.includes(query)) {
+      searchHistory.unshift(query); // Add to start
+      if (searchHistory.length > 10) searchHistory.pop(); // Keep max 10
+      localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
+      renderHistory();
+    }
+  }
+});
+
+// Render search history
+function renderHistory() {
+  historyList.innerHTML = '';
+  searchHistory.forEach(item => {
+    const li = document.createElement('li');
+    li.innerText = item;
+    li.style.cursor = 'pointer';
+    li.addEventListener('click', () => {
+      searchInput.value = item;
+      searchInput.dispatchEvent(new Event('input')); // Trigger filter
+    });
+    historyList.appendChild(li);
+  });
+}
+</script>
