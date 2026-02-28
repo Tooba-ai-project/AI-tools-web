@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tooba Urooj AI Tools Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f0ff; /* light purple background */
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #a97bff; /* darker purple */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .tools-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .tool-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+    }
+
+    .tool-card img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .tool-card h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .tool-card p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tooba Urooj AI Tools Portal</h1>
+  <p>Roll No: SU73-BSAIM-F24-018 | Department: BSAI 4th Semester | Course: Programming for AI | Assessment 4</p>
+</header>
+
+<div class="tools-container" id="toolsContainer">
+
+  <!-- Tool 1 -->
+  <div class="tool-card" onclick="window.open('https://chat.openai.com', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/openai.png" alt="ChatGPT Logo">
+    <h3>ChatGPT</h3>
+    <p>AI conversational assistant by OpenAI.</p>
+  </div>
+
+  <!-- Tool 2 -->
+  <div class="tool-card" onclick="window.open('https://www.midjourney.com', '_blank')">
+    <img src="https://cdn.iconscout.com/icon/free/png-64/midjourney-5695679-4761923.png" alt="MidJourney">
+    <h3>MidJourney</h3>
+    <p>AI image generator from text prompts.</p>
+  </div>
+
+  <!-- Tool 3 -->
+  <div class="tool-card" onclick="window.open('https://www.dalle.com', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/dall-e.png" alt="DALL-E Logo">
+    <h3>DALL-E</h3>
+    <p>AI image creation from natural language.</p>
+  </div>
+
+  <!-- Tool 4 -->
+  <div class="tool-card" onclick="window.open('https://www.canva.com', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/canva.png" alt="Canva">
+    <h3>Canva AI</h3>
+    <p>Design platform with AI content suggestions.</p>
+  </div>
+
+  <!-- Tool 5 -->
+  <div class="tool-card" onclick="window.open('https://www.jasper.ai', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/jasper.png" alt="Jasper AI">
+    <h3>Jasper AI</h3>
+    <p>AI writing assistant for marketing content.</p>
+  </div>
+
+  <!-- Tool 6 -->
+  <div class="tool-card" onclick="window.open('https://www.grammarly.com', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/grammarly.png" alt="Grammarly Logo">
+    <h3>Grammarly</h3>
+    <p>AI writing and grammar correction.</p>
+  </div>
+
+  <!-- Tool 7 -->
+  <div class="tool-card" onclick="window.open('https://www.copy.ai', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/artificial-intelligence.png" alt="Copy.ai Logo">
+    <h3>Copy.ai</h3>
+    <p>AI content generator for blogs & ads.</p>
+  </div>
+
+  <!-- Tool 8 -->
+  <div class="tool-card" onclick="window.open('https://www.inkforall.com', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/ink.png" alt="INK AI">
+    <h3>INK AI</h3>
+    <p>AI SEO and content optimization.</p>
+  </div>
+
+  <!-- Tool 9 -->
+  <div class="tool-card" onclick="window.open('https://www.synthesia.io', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/synthesia.png" alt="Synthesia Logo">
+    <h3>Synthesia</h3>
+    <p>AI video creation from text.</p>
+  </div>
+
+  <!-- Tool 10 -->
+  <div class="tool-card" onclick="window.open('https://www.elevenlabs.io', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/eleven-labs.png" alt="Eleven Labs Logo">
+    <h3>ElevenLabs</h3>
+    <p>AI voice generation platform.</p>
+  </div>
+
+  <!-- Tool 11 -->
+  <div class="tool-card" onclick="window.open('https://www.midjourney.com', '_blank')">
+    <img src="https://cdn.iconscout.com/icon/free/png-64/midjourney-5695679-4761923.png" alt="MidJourney">
+    <h3>Runway ML</h3>
+    <p>AI video editing and effects.</p>
+  </div>
+
+  <!-- Tool 12 -->
+  <div class="tool-card" onclick="window.open('https://www.replit.com/ghostwriter', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/code.png" alt="Replit Ghostwriter">
+    <h3>Replit Ghostwriter</h3>
+    <p>AI coding assistant for developers.</p>
+  </div>
+
+  <!-- Tool 13 -->
+  <div class="tool-card" onclick="window.open('https://github.com/features/copilot', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub Copilot">
+    <h3>GitHub Copilot</h3>
+    <p>AI pair programmer inside GitHub.</p>
+  </div>
+
+  <!-- Tool 14 -->
+  <div class="tool-card" onclick="window.open('https://www.tabnine.com', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/artificial-intelligence.png" alt="Tabnine Logo">
+    <h3>Tabnine</h3>
+    <p>AI code completion and suggestion.</p>
+  </div>
+
+  <!-- Tool 15 -->
+  <div class="tool-card" onclick="window.open('https://www.fireflies.ai', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/fire.png" alt="Fireflies AI">
+    <h3>Fireflies AI</h3>
+    <p>AI meeting transcription & notes.</p>
+  </div>
+
+  <!-- Tool 16 -->
+  <div class="tool-card" onclick="window.open('https://www.remove.bg', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/remove-background.png" alt="Remove.bg">
+    <h3>Remove.bg</h3>
+    <p>AI background removal for images.</p>
+  </div>
+
+  <!-- Tool 17 -->
+  <div class="tool-card" onclick="window.open('https://www.vidyo.ai', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/video.png" alt="Vidyo AI">
+    <h3>Vidyo AI</h3>
+    <p>AI video editing and summarization.</p>
+  </div>
+
+  <!-- Tool 18 -->
+  <div class="tool-card" onclick="window.open('https://www.invideo.io', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/movie.png" alt="InVideo Logo">
+    <h3>InVideo</h3>
+    <p>AI video creation platform.</p>
+  </div>
+
+  <!-- Tool 19 -->
+  <div class="tool-card" onclick="window.open('https://www.tome.app', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/presentation.png" alt="Tome AI">
+    <h3>Tome AI</h3>
+    <p>AI storytelling & presentation tool.</p>
+  </div>
+
+  <!-- Tool 20 -->
+  <div class="tool-card" onclick="window.open('https://www.chatsonic.com', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/chat.png" alt="ChatSonic Logo">
+    <h3>ChatSonic</h3>
+    <p>AI chatbot with voice & image input.</p>
+  </div>
+
+  <!-- Tool 21 -->
+  <div class="tool-card" onclick="window.open('https://www.longshot.ai', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/long-form.png" alt="LongShot AI">
+    <h3>LongShot AI</h3>
+    <p>AI long-form content writing tool.</p>
+  </div>
+
+  <!-- Tool 22 -->
+  <div class="tool-card" onclick="window.open('https://www.supermeme.ai', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/meme.png" alt="Supermeme AI">
+    <h3>Supermeme AI</h3>
+    <p>AI meme generator for social media.</p>
+  </div>
+
+  <!-- Tool 23 -->
+  <div class="tool-card" onclick="window.open('https://www.caktus.ai', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/brain.png" alt="Caktus AI">
+    <h3>Caktus AI</h3>
+    <p>AI business content assistant.</p>
+  </div>
+
+  <!-- Tool 24 -->
+  <div class="tool-card" onclick="window.open('https://www.reimaginehome.ai', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/house.png" alt="Reimagine Home AI">
+    <h3>Reimagine Home AI</h3>
+    <p>AI interior design & visualization.</p>
+  </div>
+
+  <!-- Tool 25 -->
+  <div class="tool-card" onclick="window.open('https://www.mubert.com', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/music.png" alt="Mubert Logo">
+    <h3>Mubert</h3>
+    <p>AI-generated royalty-free music.</p>
+  </div>
+
+  <!-- Tool 26 -->
+  <div class="tool-card" onclick="window.open('https://play.ht', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/microphone.png" alt="Play.ht Logo">
+    <h3>Play.ht</h3>
+    <p>Text-to-speech AI platform.</p>
+  </div>
+
+  <!-- Tool 27 -->
+  <div class="tool-card" onclick="window.open('https://www.remini.ai', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/photo.png" alt="Remini Logo">
+    <h3>Remini</h3>
+    <p>AI photo enhancer & restoration.</p>
+  </div>
+
+  <!-- Tool 28 -->
+  <div class="tool-card" onclick="window.open('https://www.fotor.com', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/fotor.png" alt="Fotor Logo">
+    <h3>Fotor AI</h3>
+    <p>Photo editing & AI effects.</p>
+  </div>
+
+  <!-- Tool 29 -->
+  <div class="tool-card" onclick="window.open('https://www.pixlr.com', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/pixlr.png" alt="Pixlr Logo">
+    <h3>Pixlr AI</h3>
+    <p>Online AI photo editor.</p>
+  </div>
+
+  <!-- Tool 30 -->
+  <div class="tool-card" onclick="window.open('https://www.designs.ai', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/design.png" alt="Designs AI">
+    <h3>Designs AI</h3>
+    <p>All-in-one AI design suite.</p>
+  </div>
+
+  <!-- Tool 31 -->
+  <div class="tool-card" onclick="window.open('https://www.darkroom.tech', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/smartphone.png" alt="Darkroom AI">
+    <h3>Darkroom AI</h3>
+    <p>AI photo & mobile editing tools.</p>
+  </div>
+
+  <!-- Tool 32 -->
+  <div class="tool-card" onclick="window.open('https://www.capcut.com', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/capcut.png" alt="CapCut Logo">
+    <h3>CapCut</h3>
+    <p>AI video editing & effects.</p>
+  </div>
+
+  <!-- Tool 33 -->
+  <div class="tool-card" onclick="window.open('https://www.photoroom.com', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/photo.png" alt="Photoroom">
+    <h3>Photoroom</h3>
+    <p>AI background removal & product images.</p>
+  </div>
+
+  <!-- Tool 34 -->
+  <div class="tool-card" onclick="window.open('https://www.lumen5.com', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/video.png" alt="Lumen5 Logo">
+    <h3>Lumen5</h3>
+    <p>AI video creator for social media.</p>
+  </div>
+
+  <!-- Tool 35 -->
+  <div class="tool-card" onclick="window.open('https://www.tome.app', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/presentation.png" alt="Tome AI">
+    <h3>Tome AI</h3>
+    <p>AI storytelling & presentations.</p>
+  </div>
+
+  <!-- Tool 36 -->
+  <div class="tool-card" onclick="window.open('https://www.bing.com/create', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/microsoft-bing.png" alt="Bing Image Creator">
+    <h3>Bing Image Creator</h3>
+    <p>AI image generation by Microsoft.</p>
+  </div>
+
+  <!-- Tool 37 -->
+  <div class="tool-card" onclick="window.open('https://www.deepai.org', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/brain.png" alt="DeepAI">
+    <h3>DeepAI</h3>
+    <p>AI generation APIs & services.</p>
+  </div>
+
+  <!-- Tool 38 -->
+  <div class="tool-card" onclick="window.open('https://www.ideogram.ai', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/idea.png" alt="Ideogram AI">
+    <h3>Ideogram AI</h3>
+    <p>AI image generation platform.</p>
+  </div>
+
+  <!-- Tool 39 -->
+  <div class="tool-card" onclick="window.open('https://www.remaker.ai', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/edit-image.png" alt="Remaker AI">
+    <h3>Remaker AI</h3>
+    <p>AI video & image enhancement tools.</p>
+  </div>
+
+  <!-- Tool 40 -->
+  <div class="tool-card" onclick="window.open('https://www.kaiber.ai', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/video.png" alt="Kaiber AI">
+    <h3>Kaiber AI</h3>
+    <p>AI text-to-video generator.</p>
+  </div>
+
+  <!-- Tool 41 -->
+  <div class="tool-card" onclick="window.open('https://www.rephrase.ai', '_blank')">
+    <img src="https://img.icons8.com/color/48/000000/video.png" alt="Rephrase AI">
+    <h3>
